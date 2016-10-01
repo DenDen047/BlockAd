@@ -1,0 +1,38 @@
+{
+    "name": "Block Ad",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Block pop ad.",
+
+    "permissions": [
+        "http://*/*"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["http://dropbooks.tv/*"],
+            "js": ["scripts/dropbooks.js"],
+            "run_at": "document_end"
+        },
+        {
+            "matches": ["http://hentaihaven.org//*"],
+            "js": ["scripts/hentaihaven.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["http://blog.livedoor.jp/wakusoku/*"],
+            "js": ["scripts/wakusoku.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["http://sugumiru18.com/*"],
+            "js": ["scripts/sugumiru18.js"],
+            "run_at": "document_start"
+        },
+        {
+            "matches": ["http://*.fc2.com/*"],
+            "js": ["scripts/fc2.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
