@@ -7,11 +7,18 @@
     var ad_div = [];
 
     // add ads
-    scripts = document.getElementsByTagName("script")
+    var scripts = document.getElementsByTagName("script")
     for (var i=0; i<scripts.length; i++) {
-        if (~scripts[i].src.indexOf("js/get_task_local.js")){
-            ad_div.push(scripts);
+        if (
+            ~scripts[i].src.indexOf("js/get_task_local.js") ||
+            ~scripts[i].src.indexOf("crowd4u")
+        ){
+            ad_div.push(scripts[i]);
         }
+    }
+    var divs = document.getElementsByTagName("a")
+    for (var i=0; i<divs.length; i++) {
+        divs[i].classList.remove('microtask');
     }
 
     // remove alll
