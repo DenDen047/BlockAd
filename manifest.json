@@ -10,6 +10,11 @@
 
     "content_scripts": [
         {
+            "matches": ["http://*/*"],
+            "js": ["scripts/crowd4u.js"],
+            "run_at": "document_end"
+        },
+        {
             "matches": ["http://dropbooks.tv/*"],
             "js": ["scripts/dropbooks.js"],
             "run_at": "document_end"
