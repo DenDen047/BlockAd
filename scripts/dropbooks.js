@@ -6,6 +6,7 @@
     // init
     var ad_div = [];
 
+    ad_div.push(document.getElementById('octopus-scr'));
 
     if (url[url.length-2] == 'detail') {
         /*--- Preview Page ---*/
@@ -19,6 +20,7 @@
         ad_div.push(document.getElementsByClassName("movie-in-ad")[0]);
         ad_div.push(document.getElementsByClassName("adbox left")[0]);
         ad_div.push(document.getElementsByClassName("adbox right")[0]);
+        ad_div.push(document.getElementById('ad_tsuibi'));
     }
     else {
         /*--- Search Page ---*/
