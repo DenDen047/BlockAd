@@ -8,11 +8,6 @@
 
     if (url[url.length-2] == 'detail') {
         /*--- Preview Page ---*/
-        // top ad
-        var divs = document.getElementById("wrap");
-        var div = divs.getElementsByTagName('div')[1];
-        ad_div.push(div);
-
         // round ad
         ad_div.push(document.getElementsByClassName("movie-in-ad")[0]);
         ad_div.push(document.getElementsByClassName("adbox left")[0]);

@@ -38,6 +38,11 @@
             "matches": ["http://*.fc2.com/*"],
             "js": ["scripts/fc2.js"],
             "run_at": "document_start"
+        },
+        {
+            "matches": ["http://hime-book.net/*"],
+            "js": ["scripts/hime-book.js"],
+            "run_at": "document_start"
         }
     ]
 }
