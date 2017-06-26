@@ -24,11 +24,6 @@
         ad_div.push(document.getElementsByTagName("iframe")[0]);
         // preview box ad
         ad_div.push(document.getElementsByClassName("box")[3]);
-
-        // ad in contents
-        var contents = document.getElementsByClassName("content_list")
-        ad_div.push(contents[0]);
-        ad_div.push(contents[contents.length - 1]);
     }
 
     // remove all
